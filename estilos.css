@@ -9,6 +9,12 @@ body {
     font-size: 20px;
 }
 
+#logotipo-cabecalho {
+    margin-top: 10px;
+    box-shadow: 0 0 1em #0003;
+    padding: 30px 30px 30px 30px;
+}
+
 #logotipo-abelha-topo {
     width: 300px;
     margin: auto;
@@ -23,15 +29,55 @@ p {
 
 .curiosidade {
     width: auto;
+    margin: 0px 0px 0px 0px;
     padding: 15px 15px 15px 15px;
-    border-width: 1px;
+    border: 1px double #f3a41f;
     border-radius: 10px;
-    border-style: solid;
-    border-color: #f3a41f;
     background-image: url('./imgs/favo-de-mel.png');
+    clear: both
 }
 
 .curiosidade img {
     margin-right: 20px;
     float: left
+}
+
+.casta-de-abelha {
+    border-radius: 50%;
+    border: 5px double #f3a41f;
+}
+
+.alinhado-esquerda {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    shape-outside: circle(50%);
+}
+
+.alinhado-direita {
+    float: right;
+    margin-left: 20px;
+    shape-outside: circle(50%);
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #1c9c82;
+}
+
+a[href^="http"] {
+    color: #683a64;
+}
+
+p:last-of-type {
+    text-align: right;
+}
+
+
+/* -- Desafio de encontrar img sem "alt". */
+
+img:not([alt]) {
+    border-color: red;
+    border-width: 20px;
 }
